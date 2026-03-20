@@ -61,7 +61,7 @@ pip install opencv-python numpy matplotlib
 
 実際の現場ではカメラで撮影した画像を使います。リポジトリには動作確認用のサンプル画像を `samples/` に同梱しています。ファイル名にずれ量（例：`test_dx+3.0_dy+0.0.png`）を含めているので、実行結果と見比べやすくなっています。
 
-![サンプル画像一覧](images/01_sample_images.png)
+![サンプル画像一覧](https://storage.googleapis.com/zenn-user-upload/e705a4ab1b0e-20260321.png)
 
 ```python
 import cv2
@@ -113,7 +113,8 @@ def load_test_images(test_dir, reference_path):
 
 下図の①が基準画像（緑枠がテンプレート切り出し範囲）、②が切り出したテンプレート、③が検査画像です。③では橙枠がマッチした位置・緑の点線が基準位置を示しています。
 
-![テンプレートマッチングの処理フロー](images/02_matching_process.png)
+![テンプレートマッチングの処理フロー](https://storage.googleapis.com/zenn-user-upload/0031704dbdf2-20260321.png)
+
 
 ```python
 def measure_offset_px(ref_img, test_img, margin=MARGIN):
@@ -211,7 +212,7 @@ test_dx-3.0_dy+2.5.png    -3.00     2.50   1.000    OK
 
 全4ケースでずれ量を正確に計測できました。右のベクトル図では、矢印の方向と長さでXY方向のずれが視覚的に把握できます。
 
-![計測結果とずれベクトルの可視化](images/03_measurement_results.png)
+![計測結果とずれベクトルの可視化](https://storage.googleapis.com/zenn-user-upload/c43ca3c885f0-20260321.png)
 
 ---
 
