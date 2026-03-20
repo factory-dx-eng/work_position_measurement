@@ -406,10 +406,6 @@ angle_deg = np.degrees(np.arctan2(M[1, 0], M[0, 0]))
 
 サンプルコード・サンプル画像一式を公開しています。
 
-🔗 [github.com/dx_bansou/work-position-measurement](https://github.com/dx_bansou/work-position-measurement)
+🔗 [github.com/yuyaniiuzma/work_position_measurement](https://github.com/yuyaniiuzma/work_position_measurement)
 
 ---
-
-## 関連記事
-
-- 液面残量をカメラで数値化する：輝度ヒストグラムによる定量化（近日公開）
